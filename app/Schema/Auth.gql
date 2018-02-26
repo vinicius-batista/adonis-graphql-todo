@@ -1,0 +1,25 @@
+type AuthTokens {
+  type: String!,
+  token: String!,
+  refreshToken: String
+}
+
+input RegisterUserInput {
+  email: String!,
+  username: String!,
+  password: String!
+}
+
+input LoginUserInput {
+  email: String!,
+  password: String!
+}
+
+type Mutation {
+  registerUser(input: RegisterUserInput): String,
+  loginUser(input: LoginUserInput): AuthTokens,
+}
+
+type Query {
+  newToken(refreshToken: String!): AuthTokens
+}

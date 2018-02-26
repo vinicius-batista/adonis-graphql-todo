@@ -1,0 +1,35 @@
+{
+  "name": "adonis-graphql-todo",
+  "version": "1.0.0",
+  "adonis-version": "4.1.0",
+  "description": "A simple todo example with graphql",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node ace test"
+  },
+  "keywords": [
+    "adonisjs",
+    "adonis-app"
+  ],
+  "author": "",
+  "license": "UNLICENSED",
+  "private": true,
+  "dependencies": {
+    "@adonisjs/ace": "^5.0.0",
+    "@adonisjs/auth": "^3.0.1",
+    "@adonisjs/bodyparser": "^2.0.2",
+    "@adonisjs/cors": "^1.0.5",
+    "@adonisjs/fold": "^4.0.7",
+    "@adonisjs/framework": "^5.0.4",
+    "@adonisjs/ignitor": "^2.0.5",
+    "@adonisjs/lucid": "^5.0.3",
+    "@adonisjs/vow": "^1.0.15",
+    "adonis-graphql": "^1.0.0-alpha",
+    "pg": "^7.4.1"
+  },
+  "devDependencies": {},
+  "autoload": {
+    "App": "./app"
+  }
+}
