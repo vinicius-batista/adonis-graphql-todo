@@ -4,6 +4,7 @@ type User {
   email: String!,
   created_at: String,
   updated_at: String
+  todos: [Todo]
 }
 
 type Query {
