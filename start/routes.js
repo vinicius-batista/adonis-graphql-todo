@@ -14,6 +14,6 @@
 */
 
 const Route = use('Route')
-const { graphql, schema } = require('adonis-graphql')
+const GraphQLServer = use('Adonis/Addons/GraphQLServer')
 
-Route.post('/graphql',  graphql((context) => ({ schema, context })))
+Route.post('/graphql',  (context) => GraphQLServer.handle(context))
